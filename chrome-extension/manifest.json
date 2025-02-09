@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Audio Downloader",
+  "version": "1.0",
+  "description": "Download audio from YouTube videos via a Python backend.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ]
+}
