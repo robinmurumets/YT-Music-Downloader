@@ -3,14 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tabs && tabs[0]) {
       const activeTab = tabs[0];
       const videoUrl = activeTab.url;
-
-      // Add click event listener to the download button
+      
       document.getElementById('downloadBtn').addEventListener('click', async () => {
         const status = document.getElementById('status');
         status.textContent = 'Processing...';
 
         try {
-          // Replace with your actual server URL if needed
           const response = await fetch('http://localhost:5000/download_audio', {
             method: 'POST',
             headers: {
